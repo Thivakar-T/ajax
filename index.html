@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CARS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="conatainer-fluid">
+        <div class="container">
+            <div>
+                <h1 class="text-center">CARS</h1>
+            </div>
+            <form  onsubmit="return false " method="post">
+
+            <div class="row py-5">
+                <div class="col-6 py-3">
+                    <label for=""> Car Name<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control  hh" id="name"
+                        placeholder="Car Name" name="name">
+                </div>
+                <div class="col-6 py-3">
+                    <label for="">Model<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control " placeholder="Model"
+                        name="Model" id="Model">
+                </div>
+                <div class="col-6 py-3">
+                    <label  for=""> Colors<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control  hh" id="Colors"
+                        placeholder="Colors " name="Colors">
+                </div>
+                <div class="col-6 py-3">
+                    <label for="">Number of wheels<sup class="text-danger">*</sup></label>
+                    <input type="number" class="form-control " placeholder="Number of wheels"
+                        name="number" id="number">
+                </div>
+                <div class="col-6 py-3">
+                    <label  for=""> Gear Type <sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control  " id="Type"
+                        placeholder="Gear Type " name="Type">
+                </div>
+                <div class="col-6 py-3">
+                    <label for="">Owner Name<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control " placeholder="Owner Name"
+                        name="Owner" id="Owner">
+                </div>
+            </div>
+            <div class="py-3 offset-10">
+                <input type="submit"  class="mx-2 border border-primary rounded bg-primary   py-3 px-4 c"  value="Submit" onclick="validateForm()">
+                <input type="reset" class="border border-danger rounded text-light bg-danger px-4 py-3 v"
+                   value="Reset "></div>
+                   </form>
+        </div>
+    </div>
+
+
+    <script>
+</script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
