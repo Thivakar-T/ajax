@@ -1,12 +1,17 @@
+var carArray=[];
 $(document ).ready(function(){
     $.ajax({
       url: ' https://5fd6ee409dd0db0017ee8a2e.mockapi.io/company',
       type: 'GET',
       async: false,
       dataType: "json",
+      data:"",
       contentType:'application/json',
       success: function (response) { 
-       carArray=response;
+        $.each(response,function(i,object){
+          carArray.push(object);
+        });
+      //  carArray=response;
        console.log(carArray);
   }
   });
